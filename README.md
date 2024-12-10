@@ -4,7 +4,7 @@
 
 This project is a real-time sensor monitoring and control dashboard, implemented using an ESP32 microcontroller and various sensors. The system integrates features such as gyroscope visualization, color sensing, pressure monitoring, and LED/servo motor control. The dashboard is accessible via a web-based interface, providing live data updates and control functionalities.
 
-https://github.com/user-attachments/assets/2941c288-58df-48ef-8251-8545be9e03b5
+https://github.com/user-attachments/assets/63502074-32f2-48d5-9176-565f2838490a
 
 ---
 
