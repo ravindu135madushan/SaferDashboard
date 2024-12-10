@@ -4,6 +4,8 @@
 
 This project is a real-time sensor monitoring and control dashboard, implemented using an ESP32 microcontroller and various sensors. The system integrates features such as gyroscope visualization, color sensing, pressure monitoring, and LED/servo motor control. The dashboard is accessible via a web-based interface, providing live data updates and control functionalities.
 
+https://github.com/user-attachments/assets/2941c288-58df-48ef-8251-8545be9e03b5
+
 ---
 
 ## Features
@@ -11,7 +13,7 @@ This project is a real-time sensor monitoring and control dashboard, implemented
 1. **Web-Based Dashboard**:
    - Real-time updates using WebSockets.
    - Displays sensor data, including gyroscope, pressure, and color sensor values.
-   - Allows user control of LEDs and a servo motor.
+   - Allows user control of LEDs.
 
 2. **Sensor Integration**:
    - **MPU6050**: Monitors accelerometer data for gyroscope visualization.
@@ -20,7 +22,7 @@ This project is a real-time sensor monitoring and control dashboard, implemented
 
 3. **Interactive Controls**:
    - Adjust LED brightness via a slider.
-   - Toggle LEDs and servo motor directly from the web dashboard.
+   - Toggle LEDs directly from the web dashboard.
 
 4. **Visualization**:
    - Live gyroscope data visualized as a 3D rotating cube.
@@ -37,8 +39,7 @@ This project is a real-time sensor monitoring and control dashboard, implemented
 3. **TCS3200 Color Sensor Module**
 4. **Pressure Sensor**
 5. **3 LEDs** for visual indication
-6. **Servo Motor**
-7. Jumper wires for connections
+6. Jumper wires for connections
 
 ### Circuit Diagram
 
@@ -53,7 +54,6 @@ Refer to the `circuit_diagram.png` file in the repository for a detailed wiring 
 | LED1             | GPIO13         | Brightness-controlled LED         |
 | LED2             | GPIO12         | Pressure sensor-controlled LED    |
 | LED3             | GPIO33         | Manual toggle LED                 |
-| Servo Motor      | GPIO16         | Servo control pin                 |
 | TCS3200 Sensor   | GPIO26, GPIO27 | S0 and S1 control pins            |
 |                  | GPIO14, GPIO25 | S2 and S3 control pins            |
 |                  | GPIO34         | Output pin                        |
@@ -72,7 +72,6 @@ Install the following Arduino libraries before uploading the code:
 - [ArduinoJson](https://github.com/bblanchon/ArduinoJson)
 - [Ticker](https://github.com/sstaub/Ticker)
 - [Wire](https://github.com/arduino-libraries/Wire)
-- [ESP32Servo](https://github.com/jkb-git/ESP32Servo)
 
 ### Setup Instructions
 
@@ -100,7 +99,7 @@ Install the following Arduino libraries before uploading the code:
 - **Pressure Monitoring**: Shows real-time pressure values and graph updates.
 - **Controls**:
   - Adjust LED1 brightness.
-  - Toggle LEDs and servo motor.
+  - Toggle LEDs.
 
 ---
 
@@ -136,4 +135,3 @@ Install the following Arduino libraries before uploading the code:
 
 - **No Web Dashboard**: Check Wi-Fi connection and ensure you are connected to `SensorDashboard`.
 - **Sensor Values Not Updating**: Verify hardware connections and sensor functionality.
-- **Servo Not Moving**: Ensure the servo is connected correctly and receives power.
