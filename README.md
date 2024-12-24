@@ -77,7 +77,7 @@ Install the following Arduino libraries before uploading the code:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/Safer-Dashboard.git
+   git clone https://github.com/ravindu135madushan/Safer-Dashboard.git
    ```
 2. Open the project in the Arduino IDE.
 3. Configure the ESP32 board:
